@@ -1,68 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selz components</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="storybook-version" content="3.3.15">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <title>Storybook</title>
-    <style>
-        /*
-          When resizing panels, the drag event breaks if the cursor
-          moves over the iframe. Add the 'dragging' class to the body
-          at drag start and remove it when the drag ends.
-         */
-        .dragging iframe {
-            pointer-events: none;
-        }
-
-        /* Styling the fuzzy search box placeholders */
-        .searchBox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: #ddd;
-            font-size: 16px;
-        }
-
-        .searchBox::-moz-placeholder { /* Firefox 19+ */
-            color: #ddd;
-            font-size: 16px;
-        }
-
-        .searchBox:focus{
-            border-color: #EEE !important;
-        }
-
-        .btn:hover{
-            background-color: #eee
-        }
-    </style>
-    <style>
-  body Pane1 {
-    display: none;
-  }
-</style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () { });
-
-  function receiveMessage(event) {
-
-    if (event.origin !== "http://components.selz.com:3100")
-      return;
-
-    const frame = document.querySelector('iframe');
-
-    frame.src = event.data;
-
-    // event.source.postMessage("hi there yourself", event.origin);
-
-  }
-
-  window.addEventListener("message", receiveMessage, false);
-
-</script>
-
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <!-- <script src="main.js"></script> -->
 </head>
-<body style="margin: 0;">
-    <div id="root"></div>
-<script type="text/javascript" src="static/manager.80ce2f68f3190728f19c.bundle.js"></script></body>
+<body>
+    <main class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="./logo.svg" />
+            </div>
+        </div>
+        <div class="content">
+            <iframe src="./docs/index.html" />
+        </div>
+    </div>
+</body>
 </html>

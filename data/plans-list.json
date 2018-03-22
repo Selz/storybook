@@ -1,0 +1,606 @@
+{
+    "data": {
+        "plans": [
+            {
+                "id": "5609fa8152177e113b709016",
+                "name": "lite",
+                "title": "Lite",
+                "overview": "A great way to start",
+                "description": null,
+                "url": "/plans/detail/5609fa8152177e113b709016",
+                "pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 19,
+                    "annually_per_month": 17,
+                    "monthly_per_month_formatted": "$19",
+                    "annually_per_month_formatted": "$17",
+                    "annually_per_year": 204,
+                    "monthly_per_year": 228,
+                    "monthly_per_year_formatted": "$228",
+                    "annually_per_year_formatted": "$204",
+                    "saving_per_month": 2,
+                    "saving_per_month_formatted": "$2",
+                    "saving_per_month_percentage": 11,
+                    "saving_per_year": 24,
+                    "saving_total_formatted": "$24",
+                    "saving_percentage": 11
+                },
+                "apps": [
+                    "5a2f5333dbcc0447f33e1c5a",
+                    "5626d0c82a68a23d65d9880e",
+                    "5386dc985a6fba8336c4ad64"
+                ],
+                "features": [
+                    "Unlimited products",
+                    "Unlimited hosting",
+                    "Free SSL certificate",
+                    "Customizable store"
+                ],
+                "fees": [
+                    "2% transaction fee",
+                    "2.9% + 30¢ processing fee¹"
+                ],
+                "coupon": {
+                    "title": null,
+                    "code": null,
+                    "saving_percentage": 0,
+                    "expiry": null
+                },
+                "coupon_pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 19,
+                    "annually_per_month": 18.87,
+                    "monthly_per_month_formatted": "$19",
+                    "annually_per_month_formatted": "$18",
+                    "annually_per_year": 226.44,
+                    "monthly_per_year": 228,
+                    "monthly_per_year_formatted": "$228",
+                    "annually_per_year_formatted": "$226",
+                    "saving_per_month": 0.13,
+                    "saving_per_month_formatted": "$0",
+                    "saving_per_month_percentage": 1,
+                    "saving_per_year": 1.56,
+                    "saving_total_formatted": "$2",
+                    "saving_percentage": 1
+                }
+            },
+            {
+                "id": "5609fa8152177e113b709017",
+                "name": "standard",
+                "title": "Standard",
+                "overview": "Everything you need to grow",
+                "description": null,
+                "url": "/plans/detail/5609fa8152177e113b709017",
+                "pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 29,
+                    "annually_per_month": 25,
+                    "monthly_per_month_formatted": "$29",
+                    "annually_per_month_formatted": "$25",
+                    "annually_per_year": 300,
+                    "monthly_per_year": 348,
+                    "monthly_per_year_formatted": "$348",
+                    "annually_per_year_formatted": "$300",
+                    "saving_per_month": 4,
+                    "saving_per_month_formatted": "$4",
+                    "saving_per_month_percentage": 14,
+                    "saving_per_year": 48,
+                    "saving_total_formatted": "$48",
+                    "saving_percentage": 14
+                },
+                "apps": [
+                    "5a2f5333dbcc0447f33e1c5a",
+                    "538678442ecf65153e7e970b",
+                    "56eb823cc4d88cba29057336",
+                    "5626d0c82a68a23d65d9880e",
+                    "55cbf1df3f64cafb6a27531c",
+                    "538678442ecf65153e7e970a",
+                    "5386dc985a6fba8336c4ad64",
+                    "532a3235a33c655651d875c3",
+                    "532a3235a33c655651d875c4"
+                ],
+                "features": [
+                    "Advanced shopping cart",
+                    "Custom domain name",
+                    "Accept PayPal",
+                    "Abandoned cart emails"
+                ],
+                "fees": [
+                    "1% transaction fee",
+                    "2.9% + 30¢ processing fee¹"
+                ],
+                "coupon": {
+                    "title": "New Year Special",
+                    "code": "20OFFSND",
+                    "saving_percentage": 20,
+                    "expiry": "End Mar 18"
+                },
+                "coupon_pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 29,
+                    "annually_per_month": 23.5,
+                    "monthly_per_month_formatted": "$29",
+                    "annually_per_month_formatted": "$23",
+                    "annually_per_year": 282,
+                    "monthly_per_year": 348,
+                    "monthly_per_year_formatted": "$348",
+                    "annually_per_year_formatted": "$282",
+                    "saving_per_month": 5.5,
+                    "saving_per_month_formatted": "$6",
+                    "saving_per_month_percentage": 19,
+                    "saving_per_year": 66,
+                    "saving_total_formatted": "$66",
+                    "saving_percentage": 19
+                }
+            },
+            {
+                "id": "5609fa8152177e113b709018",
+                "name": "pro",
+                "title": "Pro",
+                "overview": "Pro features and the lowest fees",
+                "description": null,
+                "url": "/plans/detail/5609fa8152177e113b709018",
+                "pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 49,
+                    "annually_per_month": 43,
+                    "monthly_per_month_formatted": "$49",
+                    "annually_per_month_formatted": "$43",
+                    "annually_per_year": 516,
+                    "monthly_per_year": 588,
+                    "monthly_per_year_formatted": "$588",
+                    "annually_per_year_formatted": "$516",
+                    "saving_per_month": 6,
+                    "saving_per_month_formatted": "$6",
+                    "saving_per_month_percentage": 12,
+                    "saving_per_year": 72,
+                    "saving_total_formatted": "$72",
+                    "saving_percentage": 12
+                },
+                "apps": [
+                    "5a2f5333dbcc0447f33e1c5a",
+                    "5886ad4589d70789584938f4",
+                    "5796b444d8c8963b1095ef87",
+                    "538678442ecf65153e7e970b",
+                    "56eb823cc4d88cba29057336",
+                    "5626d0c82a68a23d65d9880e",
+                    "55cbf1df3f64cafb6a27531c",
+                    "538678442ecf65153e7e970a",
+                    "5386dc985a6fba8336c4ad64",
+                    "532a3235a33c655651d875c6",
+                    "532a3235a33c655651d875c5",
+                    "532a3235a33c655651d875c3",
+                    "532a3235a33c655651d875c4"
+                ],
+                "features": [
+                    "Real-time shipping rates",
+                    "Custom receipts",
+                    "License keys",
+                    "Automated invoices"
+                ],
+                "fees": [
+                    "0% transaction fee",
+                    "2.9% + 30¢ processing fee¹"
+                ],
+                "coupon": {
+                    "title": "New Year Special",
+                    "code": "30OFFPRO",
+                    "saving_percentage": 30,
+                    "expiry": "End Mar 18"
+                },
+                "coupon_pricing": {
+                    "currency_code": "USD",
+                    "is_free": false,
+                    "monthly_per_month": 49,
+                    "annually_per_month": 35.26,
+                    "monthly_per_month_formatted": "$49",
+                    "annually_per_month_formatted": "$35",
+                    "annually_per_year": 423.12,
+                    "monthly_per_year": 588,
+                    "monthly_per_year_formatted": "$588",
+                    "annually_per_year_formatted": "$423",
+                    "saving_per_month": 13.74,
+                    "saving_per_month_formatted": "$14",
+                    "saving_per_month_percentage": 28,
+                    "saving_per_year": 164.88,
+                    "saving_total_formatted": "$165",
+                    "saving_percentage": 28
+                }
+            }
+        ],
+        "features": [
+            {
+                "title": "Fees",
+                "tables": [
+                    {
+                        "title": null,
+                        "rows": [
+                            {
+                                "title": "Credit card fees",
+                                "description": null,
+                                "cells": {
+                                    "lite": "2.9% + 30¢¹",
+                                    "standard": "2.9% + 30¢¹",
+                                    "pro": "2.9% + 30¢¹"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Transaction fee",
+                        "rows": [
+                            {
+                                "title": "Using Selz Pay",
+                                "description": null,
+                                "cells": {
+                                    "lite": "2%",
+                                    "standard": "1%",
+                                    "pro": "No fee"
+                                }
+                            },
+                            {
+                                "title": "Using external payment gateway",
+                                "description": null,
+                                "cells": {
+                                    "lite": "2%",
+                                    "standard": "1%",
+                                    "pro": "0.5%"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Features",
+                "tables": [
+                    {
+                        "title": null,
+                        "rows": [
+                            {
+                                "title": "Unlimited products",
+                                "description": null,
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Unlimited storage, bandwidth & customers",
+                                "description": "No limits applied to your item storage, download bandwidth or customers",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Advanced analytics",
+                                "description": "See your sales, traffic and orders at a glance from your desktop or mobile",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Customer management",
+                                "description": "Understand your buyers and communicate directly with them using in-app messaging",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Discounts codes",
+                                "description": "Reward loyalty by treating your buyers to discounts or free shipping",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Secure digital file delivery",
+                                "description": "Automatic secure file delivery with options to download, stream, save to Dropbox, or send to Kindle",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Global tax settings",
+                                "description": "Automatically calculate taxes at checkout, including US sales tax and EU VAT",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Real-time fraud protection",
+                                "description": "Protect your customers with real time fraud protection built in",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Responsive for mobile & tablet",
+                                "description": "Designed and built for all screen sizes out of the box",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Themes",
+                                "description": "Use professional themes or create your own",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Pages & Blog",
+                                "description": "Add content pages and blogs to your store",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Apps & Integrations",
+                                "description": "Access the app store to add features and integrations",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Store Password",
+                                "description": null,
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Custom Domain",
+                                "description": "Use your own domain for your store and serve via HTTPS",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "PayPal",
+                                "description": "Sell more by allowing your customers to pay using PayPal",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Shopping Cart",
+                                "description": "Increase your order values with a fully featured shopping cart",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Worldwide Shipping",
+                                "description": "Create advanced worldwide shipping rules",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Abandoned Cart",
+                                "description": "Increase revenue by recovering abandoned carts",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Custom Fields",
+                                "description": "Collect more information from your customers at checkout",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Tax Invoices",
+                                "description": "Automatically send invoices with every order from your store",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": false,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Custom Receipts",
+                                "description": "Promote and upsell your products with customised order confirmation emails",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": false,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "License Keys",
+                                "description": "Generate and issue license keys for your items",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": false,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Real-time Shipping",
+                                "description": "Calculate real-time shipping carrier rates at checkout",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": false,
+                                    "pro": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Channels",
+                "tables": [
+                    {
+                        "title": null,
+                        "rows": [
+                            {
+                                "title": "Add products to any website or blog",
+                                "description": "Create and customize embeddable buttons and widgets",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Fully customizable online store",
+                                "description": "Create a beautiful and fully featured online store with our simple store builder",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Facebook store",
+                                "description": "Add your store to Facebook and sell direct from your page or profile",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "24/7 Support",
+                "tables": [
+                    {
+                        "title": null,
+                        "rows": [
+                            {
+                                "title": "Support center",
+                                "description": "Access to our comprehensive support center",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "FounderU",
+                                "description": "Access to FounderU, loaded with resources to help you improve your sales",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Email support",
+                                "description": "We're always here for 24/7 email support",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Live chat",
+                                "description": "Talk live to a real human being",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Personal appointments",
+                                "description": "Schedule one-on-one setup sessions with one of our Selz Experts",
+                                "cells": {
+                                    "lite": true,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            },
+                            {
+                                "title": "Priority support",
+                                "description": "Your support requests will be given priority",
+                                "cells": {
+                                    "lite": false,
+                                    "standard": true,
+                                    "pro": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "selected_plan": null,
+        "billing_cycle": "annually",
+        "resources": {
+            "month": "Month",
+            "year": "Year",
+            "monthly": "Monthly",
+            "annually": "Annually",
+            "choose_format": "Choose {0}",
+            "included": "Included",
+            "billing_cycle": "Billing cycle",
+            "billed_monthly": "Billed monthly",
+            "billed_annually": "Billed annually",
+            "features_glance": "Features at a glance",
+            "save_format": "Save {0}",
+            "most_popular": "Most popular",
+            "lowest_fees": "Lowest fees",
+            "current_plan": "Your current plan",
+            "upgrade": "Upgrade",
+            "downgrade": "Downgrade",
+            "switch_billing": "Switch billing",
+            "compare_plan_features": "Compare plan features",
+            "start_free_trial": "Start free trial",
+            "includes_discount": "Includes discount",
+            "code": "Use code",
+            "save": "Save"
+        }
+    },
+    "is_authenticated": false
+}

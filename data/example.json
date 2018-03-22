@@ -1,0 +1,7 @@
+{
+    "data": {
+        "heading": "Feature Example",
+        "text": "Click the button below to demonstrate a click event, a state update and a UI update",
+        "button": "Update state"
+    }
+}

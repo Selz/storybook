@@ -1,0 +1,58 @@
+{
+    "data": {
+        "general": {
+            "401": {
+                "title": "Page not found",
+                "subtext": "Sorry, we couldn't find this page."
+            },
+            "breadcrumbs": {
+                "home": "Home",
+                "products": "Products"
+            },
+            "search": {
+                "results": "Search Results"
+            },
+            "pagination": {
+                "summary": "Page {{ current_page }} of {{ pages }}",
+                "previous": "Previous",
+                "next": "Next"
+            }
+        },
+        "customer": {
+            "orders": {
+                "order_count": {
+                    "zero": "Looks like you haven't made any orders yet",
+                    "one": "You've made one order with us",
+                    "other": "You've made {{ count }} orders with us"
+                },
+                "order_details": {
+                    "value": "This order is worth",
+                    "qty": "How many items"
+                }
+            }
+        }
+    },
+    "config": {
+        "selectedLanguages": [
+            {
+                "id": "en-CA",
+                "label": "english canadian"
+            },
+            {
+                "id": "en-GB",
+                "label": "english british"
+            },
+            {
+                "id": "fr-FR",
+                "label": "french"
+            }
+        ],
+        "otherLanguages": [
+            {
+                "id": "en-US",
+                "label": "english american"
+            }
+        ],
+        "activeLanguage": "en-CA"
+    }
+}

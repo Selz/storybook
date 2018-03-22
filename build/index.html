@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="storybook-version" content="3.3.15">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <title>Storybook</title>
+    <style>
+        /*
+          When resizing panels, the drag event breaks if the cursor
+          moves over the iframe. Add the 'dragging' class to the body
+          at drag start and remove it when the drag ends.
+         */
+        .dragging iframe {
+            pointer-events: none;
+        }
+
+        /* Styling the fuzzy search box placeholders */
+        .searchBox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .searchBox::-moz-placeholder { /* Firefox 19+ */
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .searchBox:focus{
+            border-color: #EEE !important;
+        }
+
+        .btn:hover{
+            background-color: #eee
+        }
+    </style>
+    <style>
+
+    * {
+        font-size: 14px !important;
+        color: rgba(255, 255, 255, .9) !important;
+    }
+
+    .Pane.horizontal.Pane1 > div {
+        padding: 0 !important;
+    }
+
+    .Pane.horizontal.Pane1 > div > div {
+        border-radius: 0 !important;
+    }
+
+    .Pane.horizontal.Pane1 button {
+        background: rgb(84, 115, 212) !important;
+    }
+
+    .Pane.vertical.Pane1 > div:first-child > div:first-child > div:first-child > div:first-child {
+        display: none !important;
+    }
+
+    .Pane.vertical.Pane1 * {
+        border: 0 !important;
+        background: none !important;
+    }
+
+    .Pane.vertical.Pane1 input {
+        padding: 12px 16px !important;
+        height: auto !important;
+        border-radius: 4px !important;
+        background: #ffffff !important;
+        color: rgb(130, 130, 130) !important;
+    }
+
+    #root > div > div {
+        background: #f4f5f7 !important;
+        background: rgb(84, 115, 212) !important;
+        background: rgb(101, 84, 192) !important;
+    }
+
+    svg {
+        fill: #ffffff !important;
+    }
+
+    ul {
+        margin-top: 15px !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    ul ul {
+        margin-bottom: 8px !important;
+        margin-top: 0 !important;
+    }
+
+    li li {
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+    }
+
+    li li li {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    ul ul a {
+        padding: 8px 12px !important;
+        margin-left: 0px !important;
+        background: 0 !important;
+        border-radius: 3px !important;
+        font-size: 14px !important;
+        font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+
+    }
+
+    a:active {
+        background: rgba(9, 30, 66, 0.04);
+    }
+
+</style>
+
+<script>
+//   document.addEventListener("DOMContentLoaded", function () { });
+
+//   function receiveMessage(event) {
+
+//     if (event.origin !== "http://components.selz.com:3100")
+//       return;
+
+//     const frame = document.querySelector('iframe');
+
+//     frame.src = event.data;
+
+//     // event.source.postMessage("hi there yourself", event.origin);
+
+//   }
+
+//   window.addEventListener("message", receiveMessage, false);
+
+</script>
+
+</head>
+<body style="margin: 0;">
+    <div id="root"></div>
+<script type="text/javascript" src="static/manager.e199cc79265a138e83e5.bundle.js"></script></body>
+</html>
