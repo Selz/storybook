@@ -27,7 +27,7 @@
     xhr.send();
     xhr.onload = function (e) {
         var div = document.createElement("div");
-        div.innerHTML = ajax.responseText;
+        div.innerHTML = xhr.responseText;
         document.body.insertBefore(div, document.body.childNodes[0]);
     }
 </script>
