@@ -22,10 +22,10 @@
 <meta name="csrf-token" content="pyEiPUXPSdgFuEWF2VEVr566tdOI4OQEJ0l8IvzotL7Sb7jBQngeKVlB0dEN7kI97z83-9gLCHzXmLRywHNOKdbyrwI1,EhZ2q_MIdg5gTn5lEq--ErkqCOSM8h2OrBu6D_LC2UfMzok-vj-W5KGFuvG2_Hsa4Vygy4CCHh8PeP9Sc5xyuke-aqk1">
 
 <script>
-    var ajax = new XMLHttpRequest();
-    ajax.open("GET", "https://selzstatic.com/assets/4110/sprite/base.svg", true);
-    ajax.send();
-    ajax.onload = function (e) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://selzstatic.com/assets/4110/sprite/base.svg", true);
+    xhr.send();
+    xhr.onload = function (e) {
         var div = document.createElement("div");
         div.innerHTML = ajax.responseText;
         document.body.insertBefore(div, document.body.childNodes[0]);
@@ -57,5 +57,5 @@
 <body>
 <div id="root"></div>
 <div id="error-display"></div>
-<script type="text/javascript" src="static/preview.e5bc0c1056c3bd02812f.bundle.js"></script></body>
+<script type="text/javascript" src="static/preview.be27fdfc0ae9f3dac1a5.bundle.js"></script></body>
 </html>
