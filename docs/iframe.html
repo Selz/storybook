@@ -30,6 +30,21 @@
         div.innerHTML = xhr.responseText;
         document.body.insertBefore(div, document.body.childNodes[0]);
     }
+
+    window.addEventListener("message", receiveMessage, false);
+
+    function receiveMessage(event) {
+
+        // if (event.origin !== "http://components.selz.com:3100")
+        //     return;
+
+        // const frame = document.querySelector('iframe');
+
+        // console.log('FROM PARENT TEST', event.data);
+
+        window.parent.postMessage(event.data, '*')
+
+    }
 </script>
 <!--
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
