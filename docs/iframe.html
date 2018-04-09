@@ -21,6 +21,16 @@
 
 <meta name="csrf-token" content="pyEiPUXPSdgFuEWF2VEVr566tdOI4OQEJ0l8IvzotL7Sb7jBQngeKVlB0dEN7kI97z83-9gLCHzXmLRywHNOKdbyrwI1,EhZ2q_MIdg5gTn5lEq--ErkqCOSM8h2OrBu6D_LC2UfMzok-vj-W5KGFuvG2_Hsa4Vygy4CCHh8PeP9Sc5xyuke-aqk1">
 
+<script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "https://selzstatic.com/assets/4110/sprite/base.svg", true);
+    ajax.send();
+    ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+</script>
 <!--
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -47,5 +57,5 @@
 <body>
 <div id="root"></div>
 <div id="error-display"></div>
-<script type="text/javascript" src="static/preview.6d302a1d79ae0733942d.bundle.js"></script></body>
+<script type="text/javascript" src="static/preview.e5bc0c1056c3bd02812f.bundle.js"></script></body>
 </html>

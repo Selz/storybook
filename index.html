@@ -6,6 +6,33 @@
         <title>Selz components</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+        <script>
+
+            // document.addEventListener("DOMContentLoaded", function () {
+
+            //     var q = {};
+
+            //     location.href.split('?')[1].split('&').forEach(function (i) {
+            //         q[i.split('=')[0]] = i.split('=')[1];
+            //     });
+
+            //     console.log(q);
+
+            //     let iframeOne = document.getElementById('iframeOne');
+
+            //     iframeOne.contentWindow.postMessage("MESSAGE FROM PARENT", '*');
+            // });
+
+            // window.addEventListener("message", receiveMessage, false);
+
+            // function receiveMessage(event) {
+            //     // if (event.origin !== "http://example.org:8080")
+            //     //     return;
+
+            //     console.log('FROM CHILD', event.data);
+            // }
+
+        </script>
     </head>
     <body>
         <main class="container">
@@ -15,8 +42,9 @@
                 </div>
             </div>
             <div class="content">
-                <iframe src="./docs/index.html" />
+                <iframe id="iframeOne" src="./docs/index.html" />
             </div>
         </div>
+
     </body>
 </html>
