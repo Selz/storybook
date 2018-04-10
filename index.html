@@ -10,62 +10,45 @@
 
             // document.addEventListener("DOMContentLoaded", function () {
 
-            //     // var q = {};
+            //     var query = {};
 
-            //     // location.href.split('?')[1].split('&').forEach(function (i) {
-            //     //     q[i.split('=')[0]] = i.split('=')[1];
-            //     // });
+            //     location.href.split('?')[1].split('&').forEach(function (item) {
+            //         query[item.split('=')[0]] = item.split('=')[1];
+            //         query['type'] = 'queryParams';
+            //     });
 
-            //     // console.log(q);
+            //     // let frame = document.getElementById('frame');
 
-            //     let frame = document.getElementById('frame');
+            //     // console.log('FRAME', frame);
 
-            //     frame.contentWindow.postMessage("MESSAGE FROM PARENT", '*');
+            //     // frame.contentWindow.postMessage(query, '*');
+
+            //     var frame = document.getElementById('frame');
+            //     frame.contentWindow.postMessage(JSON.stringify(query), "*");
             // });
 
             // window.addEventListener("message", receiveMessage, false);
 
             // function receiveMessage(event) {
-            //     // if (event.origin !== "http://example.org:8080")
+
+            //     // if (event.origin !== "http://components.selz.com:3100")
             //     //     return;
 
-            //     console.log('FROM CHILD', event.data);
+            //     let data;
+
+            //     data = JSON.parse(event.data.replace("\'", ""));
+
+            //     if (typeof data === 'object') {
+
+            //         if (data.event.type === 'setCurrentStory') {
+            //             let kind = data.event.args[0].kind;
+            //             let story = data.event.args[0].story;
+            //             let url = `?component=${kind}&story=${story}`;
+
+            //             window.history.pushState('', '', url);
+            //         }
+            //     }
             // }
-
-            window.addEventListener("message", receiveMessage, false);
-
-            function receiveMessage(event) {
-
-                // if (event.origin !== "http://components.selz.com:3100")
-                //     return;
-
-                // const frame = document.querySelector('iframe');
-
-                // console.log('DATAFGJFJHFJHFHJCFGHJJHH', event.data);
-
-                let data;
-
-                data = JSON.parse(event.data.replace("\'", ""));
-
-                if (typeof data === 'object') {
-
-                    if (data.event.type === 'setCurrentStory') {
-                        // console.log('DATA', data);
-                        // console.log(data.event.args[0].kind);
-                        // console.log(data.event.args[0].story);
-
-                        let kind = data.event.args[0].kind;
-                        let story = data.event.args[0].story;
-
-                        var pageUrl = `?component=${kind}&story=${story}`;
-
-                        window.history.pushState('', '', pageUrl);
-                    }
-                }
-            }
-
-            // console.log('FRAMES', window.frames)
-
         </script>
     </head>
     <body>

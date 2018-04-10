@@ -31,20 +31,11 @@
         document.body.insertBefore(div, document.body.childNodes[0]);
     }
 
-    // window.addEventListener("message", receiveMessage, false);
+    window.addEventListener("message", receiveMessage, false);
 
-    // function receiveMessage(event) {
-
-    //     // if (event.origin !== "http://components.selz.com:3100")
-    //     //     return;
-
-    //     // const frame = document.querySelector('iframe');
-
-    //     // console.log('FROM PARENT TEST', event.data);
-
-    //     window.parent.postMessage(event.data, '*')
-
-    // }
+    function receiveMessage(event) {
+        window.parent.postMessage(event.data, '*')
+    }
 </script>
 <!--
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -67,28 +58,10 @@
     .language-js .language-js {
         margin-bottom: 0 !important;
     }
-
-    code {
-        padding: 0 20px 20px 20px !important;
-        width: 100%;
-        display: inline-block;
-        background: #f7f8fa;
-        color: #2e343d;
-        border-radius: 4px;
-        border: 1px solid #dbe3e8;
-    }
-
-    pre {
-        margin: 0 !important;
-    }
-
-    .container>div>div>div>div {
-        border: 0 !important;
-    }
 </style>
 </head>
 <body>
 <div id="root"></div>
 <div id="error-display"></div>
-<script type="text/javascript" src="static/preview.11c651a896c2115292b4.bundle.js"></script></body>
+<script type="text/javascript" src="static/preview.c186343bb610b9fd7b17.bundle.js"></script></body>
 </html>

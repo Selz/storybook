@@ -156,27 +156,42 @@
 
 <script>
 
-    // window.addEventListener("message", receiveMessage, false);
 
-    // function receiveMessage(event) {
 
-    //     // if (event.origin !== "http://components.selz.com:3100")
-    //     //     return;
+    function receiveMessage(event) {
 
-    //     // const frame = document.querySelector('iframe');
+        // console.log('Data from index', event.data);
 
-    //     // console.log('FROM PARENT TEST', event.data);
+        let data;
 
-    //     // console.log('Data from index', event.data);
+        data = JSON.parse(event.data.replace("\'", ""));
 
-    //     window.parent.postMessage(event.data, '*')
+        console.log('DATA', data);
 
-    // }
+        if (typeof data === 'object') {
+
+            if (data.event.type === 'queryParams') {
+                // let kind = data.event.args[0].kind;
+                // let story = data.event.args[0].story;
+                // let url = `?component=${kind}&story=${story}`;
+
+                const frame = document.getElementById('storybook-preview-iframe');
+                console.log('Content Loaded');
+                console.log(frame);
+            } else {
+                window.parent.postMessage(event.data, '*')
+            }
+        }
+
+        window.addEventListener("message", receiveMessage, false);
+
+
+    }
 
 </script>
 
 </head>
 <body style="margin: 0;">
     <div id="root"></div>
-<script type="text/javascript" src="static/manager.bc5eb31163f51dcc8dbb.bundle.js"></script></body>
+<script type="text/javascript" src="static/manager.ab8eb04dd7e771348fe2.bundle.js"></script></body>
 </html>
