@@ -18,7 +18,7 @@
     <title>Storybook</title>
     <title>Storybook</title>
 
-<!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
@@ -35,14 +35,14 @@
 <meta name="csrf-token" content="12345">
 
 <script>
-    // var xhr = new XMLHttpRequest();
-    // xhr.open("GET", "./base.svg", true);
-    // xhr.send();
-    // xhr.onload = function (e) {
-    //     var div = document.createElement("div");
-    //     div.innerHTML = xhr.responseText;
-    //     document.body.insertBefore(div, document.body.childNodes[0]);
-    // }
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "./base.svg", true);
+    xhr.send();
+    xhr.onload = function (e) {
+        var div = document.createElement("div");
+        div.innerHTML = xhr.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    }
 
     // window.addEventListener("message", receiveMessage, false);
 
