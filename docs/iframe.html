@@ -18,17 +18,25 @@
     <title>Storybook</title>
     <title>Storybook</title>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script> -->
 
-<meta name="csrf-token" content="pyEiPUXPSdgFuEWF2VEVr566tdOI4OQEJ0l8IvzotL7Sb7jBQngeKVlB0dEN7kI97z83-9gLCHzXmLRywHNOKdbyrwI1,EhZ2q_MIdg5gTn5lEq--ErkqCOSM8h2OrBu6D_LC2UfMzok-vj-W5KGFuvG2_Hsa4Vygy4CCHh8PeP9Sc5xyuke-aqk1">
+<!-- off line viewing -->
+
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-validate.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/bootbox.js"></script>
+
+<meta name="csrf-token" content="12345">
 
 <script>
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://selzstatic.com/assets/4110/sprite/base.svg", true);
+    xhr.open("GET", "./base.svg", true);
     xhr.send();
     xhr.onload = function (e) {
         var div = document.createElement("div");
@@ -100,6 +108,6 @@
 <body>
     <div id="root"></div>
     <div id="error-display"></div>
-<script type="text/javascript" src="static/preview.53d850eb0174dcd6bc86.bundle.js"></script></body>
+<script type="text/javascript" src="static/preview.cc84afdc3c983fd14f9a.bundle.js"></script></body>
 
 </html>
