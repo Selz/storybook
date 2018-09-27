@@ -18,9 +18,6 @@
 
 <script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 
-<script src="https://js.stripe.com/v3/"></script>
-
-
 <!-- off line viewing -->
 
 <!-- <script src="./js/jquery.js"></script>
@@ -35,6 +32,14 @@
 <script>
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://selz.github.io/storybook/docs/base.svg", true);
+    xhr.send();
+    xhr.onload = function (e) {
+        var div = document.createElement("div");
+        div.innerHTML = xhr.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+
+    xhr.open("GET", "./base.svg", true);
     xhr.send();
     xhr.onload = function (e) {
         var div = document.createElement("div");
@@ -178,5 +183,5 @@
             <code id="error-stack"></code>
         </pre>
     </div>
-<script type="text/javascript" src="static/preview.b9255db3876e01a25e06.bundle.js"></script><script type="text/javascript" src="static/vendors~preview.0f0b917c18181938c606.bundle.js"></script><script type="text/javascript" src="static/runtime~preview.54cc4290e870f934d9e1.bundle.js"></script></body>
+<script type="text/javascript" src="static/preview.6d095d0caa3e4490b5ff.bundle.js"></script><script type="text/javascript" src="static/vendors~preview.7c0c268f774a71d8385d.bundle.js"></script><script type="text/javascript" src="static/runtime~preview.54cc4290e870f934d9e1.bundle.js"></script></body>
 </html>
