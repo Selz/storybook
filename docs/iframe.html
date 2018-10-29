@@ -1,36 +1,61 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <base target="_parent">
-    <title>Storybook</title>
-    <link rel="shortcut icon" href="favicon.ico?v=1" />
-    <title>Storybook</title>
+<!doctype html><html><head><meta charset="utf-8"><title>Storybook</title><base target="_parent"><style>:not(.sb-show-main) > .sb-main,
+  :not(.sb-show-nopreview) > .sb-nopreview,
+  :not(.sb-show-errordisplay) > .sb-errordisplay {
+      display: none;
+  }
 
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  .sb-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  .sb-heading {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 10px 0;
+  }
 
-<script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+  .sb-nopreview {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
-<!-- off line viewing -->
+  .sb-nopreview_main {
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.03);
+  }
 
-<!-- <script src="./js/jquery.js"></script>
-<script src="./js/jquery-validate.js"></script>
-<script src="./js/bootstrap.js"></script>
-<script src="./js/bootbox.js"></script> -->
+  .sb-nopreview_heading {
+    text-align: center;
+  }
 
-<!-- ./base.svg -->
+  .sb-errordisplay {
+    background-color: rgb(187, 49, 49);
+    color: #FFF;
+  }
 
-<meta name="csrf-token" content="12345">
-
-<script>
-    var xhr = new XMLHttpRequest();
+  .sb-errordisplay_code {
+    font-size: 14px;
+    width: 100vw;
+    overflow: auto;
+  }</style><script>try {
+    if (window.parent !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+      window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    console.warn('unable to connect to parent frame for connecting dev tools');
+  }</script><title>Storybook</title><script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script><script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script><meta name="csrf-token" content="12345"><script>var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://selz.github.io/storybook/docs/base.svg", true);
     xhr.send();
     xhr.onload = function (e) {
@@ -60,19 +85,7 @@
 
     //     window.parent.postMessage(event.data, '*')
 
-    // }
-</script>
-<!--
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
--->
-
-<style>
-    /* html {
+    // }</script><style>/* html {
         overflow-y: scroll !important;
     } */
 
@@ -104,84 +117,6 @@
 
     /* .container>div>div>div>div {
         border: 0 !important;
-    } */
-</style>
-    <style>
-        :not(.sb-show-main) > .sb-main,
-        :not(.sb-show-nopreview) > .sb-nopreview,
-        :not(.sb-show-errordisplay) > .sb-errordisplay {
-            display: none;
-        }
-
-
-        .sb-wrapper {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .sb-heading {
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 0.2px;
-            margin: 10px 0;
-        }
-
-
-        .sb-nopreview {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .sb-nopreview_main {
-            margin: auto;
-            padding: 30px;
-            border-radius: 10px;
-            background: rgba(0,0,0,0.03);
-        }
-
-        .sb-nopreview_heading {
-            text-align: center;
-        }
-
-
-        .sb-errordisplay {
-            background-color: rgb(187, 49, 49);
-            color: #FFF;
-        }
-
-        .sb-errordisplay_code {
-            font-size: 14px;
-            width: 100vw;
-            overflow: auto;
-        }
-    </style>
-</head>
-<body class="sb-show-main">
-    <div id="root" class="sb-main"></div>
-
-    <div class="sb-nopreview sb-wrapper">
-        <div class="sb-nopreview_main">
-            <h1 class="sb-nopreview_heading sb-heading">No Preview</h1>
-            <p>Sorry, but you either have no stories or none are selected somehow.</p>
-            <ul>
-                <li>Please check the storybook config.</li>
-                <li>Try reloading the page.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="sb-errordisplay sb-wrapper">
-        <div id="error-message" class="sb-heading"></div>
-        <pre class="sb-errordisplay_code">
-            <code id="error-stack"></code>
-        </pre>
-    </div>
-<script type="text/javascript" src="static/preview.b841152809554d6ce85b.bundle.js"></script><script type="text/javascript" src="static/vendors~preview.18789d1754c54dc36741.bundle.js"></script><script type="text/javascript" src="static/runtime~preview.54cc4290e870f934d9e1.bundle.js"></script></body>
-</html>
+    } */</style></head><body><div class="sb-nopreview sb-wrapper"><div class="sb-nopreview_main"><h1 class="sb-nopreview_heading sb-heading">No Preview</h1><p>Sorry, but you either have no stories or none are selected somehow.</p><ul><li>Please check the storybook config.</li><li>Try reloading the page.</li></ul></div></div><div class="sb-errordisplay sb-wrapper"><div id="error-message" class="sb-heading"></div><pre class="sb-errordisplay_code">
+    <code id="error-stack"></code>
+  </pre></div><div id="root"></div><script src="static/runtime~iframe.36305751f78a2d599ec4.bundle.js"></script><script src="static/vendors~iframe.cd2ba459340bbdaa886f.bundle.js"></script><script src="static/iframe.616560f1c973cac3ffeb.bundle.js"></script></body></html>

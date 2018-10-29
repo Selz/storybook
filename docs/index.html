@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="storybook-version" content="4.0.0-alpha.16">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <title>Storybook</title>
-    <link rel="shortcut icon" href="favicon.ico?v=1" />
-    <style>
-    * {
+<!doctype html><html><head><meta charset="utf-8"><title>Storybook</title><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }</style><script>try {
+    if (window.parent !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+      window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    console.warn('unable to connect to parent frame for connecting dev tools');
+  }</script><style>* {
         font-size: 14px !important;
         /* color: rgba(255, 255, 255, .9) !important; */
         color: #69757f !important;
@@ -124,12 +127,7 @@
 
     a:active {
         background: rgba(9, 30, 66, 0.04);
-    }
-</style>
-
-<script>
-
-    // window.addEventListener("message", receiveMessage, false);
+    }</style><script>// window.addEventListener("message", receiveMessage, false);
 
     // function receiveMessage(event) {
 
@@ -144,19 +142,4 @@
 
     //     window.parent.postMessage(event.data, '*')
 
-    // }
-
-</script>
-
-</head>
-<body style="margin: 0;">
-    <style>
-        html, body {
-            overflow: hidden;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-    <div id="root"></div>
-<script type="text/javascript" src="static/manager.c692aa73ec5921d49659.bundle.js"></script><script type="text/javascript" src="static/runtime~manager.4df74dbc3c7ba7bb0154.bundle.js"></script></body>
-</html>
+    // }</script></head><body><div id="root"></div><script src="static/runtime~manager.9ffd8dd7b8642e4235e2.bundle.js"></script><script src="static/manager.17d4d661d068ad2b50d4.bundle.js"></script></body></html>
