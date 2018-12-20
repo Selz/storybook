@@ -12,58 +12,38 @@
   } catch (e) {
     console.warn('unable to connect to parent frame for connecting dev tools');
   }</script><style>* {
-        font-size: 14px !important;
-        /* color: rgba(255, 255, 255, .9) !important; */
-        color: #69757f !important;
+        /* font-size: 14px !important; */
         color: rgb(66, 82, 110) !important;
     }
-
-    .Pane.horizontal.Pane1>div {
-        padding: 0 !important;
-    }
-
-    .Pane.horizontal.Pane1>div>div {
-        border-radius: 0 !important;
+    input {
+        padding: 12px 18px !important;
+        font-size: 14px !important;
+        height: auto !important;
+        /* border: 1px solid rgba(84, 115, 212, .3) !important; */
+        border-radius: 100px !important;
+        transition : border .3s ease-out;
         border: 0 !important;
+        background:#eceef3 !important;
+    }
+    input:focus {
+        /* border: 1px solid rgba(84, 115, 212, .8) !important; */
+        border-radius: 100px !important;
     }
 
-    .Pane.vertical.Pane1>div>div>div {
-        padding: 15px 15px 15px 15px !important;
-    }
-
-    .Pane.horizontal.Pane1 button {
-        background: rgb(84, 115, 212) !important;
-    }
-
-    .Pane.vertical.Pane1>div>div>div>div:nth-child(2) {
-        /* border-color: #4b3f8e !important; */
-        border: 0 !important;
-    }
-
-    .Pane.vertical.Pane1 input {
-        border: 1px solid rgba(84, 90, 182, 0.5) !important;
-        border-radius: 4px !important;
-    }
-
-    .Pane.vertical.Pane1 input:focus {
-        border: 1px solid rgba(84, 90, 182, 1) !important;
-        border-radius: 4px !important;
-    }
-
+    /*
     .Pane.vertical.Pane1>div:first-child>div:first-child>div:first-child>div:first-child {
         display: none !important;
     }
 
     .Pane.vertical.Pane1 {
-        width: 300px !important;
-        max-width: 300px !important;
+        width: 250px !important;
+        max-width: 250px !important;
         position: sticky;
         top: 0;
         bottom: 0;
     }
 
     .Pane.vertical.Pane1 * {
-        /* border: 0 !important; */
         background: none !important;
     }
 
@@ -73,6 +53,16 @@
         border-radius: 4px !important;
         background: #ffffff !important;
         color: rgb(130, 130, 130) !important;
+    }
+
+    .Pane.horizontal.Pane2 > div > div {
+        border-radius: none !important;
+        border: 0 !important;
+        padding: 10px 20px !important;
+    }
+
+    .div[role=tablist] {
+        padding: 0 !important;
     }
 
     .Resizer.horizontal.disabled {
@@ -86,8 +76,6 @@
     #root>div>div {
         background: #f4f5f7 !important;
         background: #f7f8fa !important;
-        /* background: rgb(84, 115, 212) !important;
-        background: rgb(101, 84, 192) !important; */
     }
 
     svg {
@@ -95,51 +83,212 @@
         fill: #69757f !important;
     }
 
+    */
+
     ul {
-        margin-top: 15px !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
         padding-top: 0 !important;
         padding-right: 0 !important;
+        padding-left: 0 !important;
     }
-
     ul ul {
         margin-bottom: 8px !important;
         margin-top: 0 !important;
+        margin-left: 0px !important;
     }
-
+    ul ul ul {
+        padding-left: 25px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
     li li {
         margin-top: 4px !important;
         margin-bottom: 4px !important;
     }
-
     li li li {
         margin-top: 0px !important;
-        margin-bottom: 0px !important;
+        margin-bottom: 5px !important;
     }
-
     ul ul a {
-        padding: 8px 12px !important;
+        padding: 1px 0px 1px 0px !important;
         margin-left: 0px !important;
         background: 0 !important;
         border-radius: 3px !important;
+        line-height: 22px !important;
         font-size: 14px !important;
-        font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
     }
-
+    svg {
+        fill: #ffffff !important;
+        fill: #69757f !important;
+    }
     a:active {
         background: rgba(9, 30, 66, 0.04);
-    }</style><script>// window.addEventListener("message", receiveMessage, false);
+    }
+    .Pane.vertical.Pane1 {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        width: 250px !important;
+    }
+    .Pane.vertical.Pane1 div div {
+        padding: 0px !important;
+    }
+    .Pane.vertical.Pane1>div:first-child>div:first-child>div:first-child>div:first-child {
+        display: none !important;
+    }
+    .Pane.horizontal.Pane1 {
+        padding: 0 !important;
+    }
+    .Pane.horizontal.Pane1 div {
+        padding: 0 !important;
+    }
+    .Resizer.vertical {
+        display: none !important;
+    }
+    .Pane.vertical.Pane1 div[role='menuitem'] {
+        padding: 5px 0px 5px 10px !important;
+        /* background: rgba(9, 30, 66, 0.04) !important; */
+        border-radius: 2px !important;
+    }
+    .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:first-child {
+        display: none !important;
+    }
+    .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:nth-child(2) {
+        font-size: 12px !important;
+        text-transform: uppercase;
+    }
+    .Pane.vertical.Pane1 div div div > div:nth-child(3) {
+        height: calc(100% - 175px);
+        position: absolute;
+        width: 100%;
+        overflow: scroll;
+        top: 65px;
+    }
+    .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+    }
+    .Pane.vertical.Pane1 > div > div > div:before {
+        display: block;
+        background-image: url('./images/logo.svg');
+        background-size: 77px 43px;
+        content: ' ';
+        position: absolute;
+        top: 10px;
+        width: 77px;
+        height: 43px;
+        left: 8px;
+        transform: scale(0.8);
+        /* transform: scale(0.9) translateX(-50%); */
+        transform-origin: top left;
+    }
+    .Pane.horizontal.Pane2 > div > div > div {
+        padding: 15px 20px !important;
+        width: auto !important;
+    }
 
-    // function receiveMessage(event) {
+    .Pane.horizontal.Pane2 form label > span {
+        min-width: 150px !important;
+    }
 
-    //     // if (event.origin !== "http://components.selz.com:3100")
-    //     //     return;
+    textarea {
+        height: 40px !important;
+        padding: 8px 16px !important;
+        font-size: 14px !important;
+        border-radius: 100px !important;
+        background: #f7f8fa !important;
+    }
 
-    //     // const frame = document.querySelector('iframe');
+    input[type=radio] {
+        position: absolute;
+        left: -10000px;
+        display: block;
+    }
 
-    //     // console.log('FROM PARENT TEST', event.data);
+    input[type=radio]+label {
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px !important;
+        background-color: #f7f8fa;
+        padding: 6px 10px 8px 10px !important;
+        margin-right: 12px;
+    }
 
-    //     // console.log('Data from index', event.data);
+    /* Hover */
+    /* input[type=radio]+label:hover {
+        border-color: #00AD51;
+        color: #00AD51;
+    } */
 
-    //     window.parent.postMessage(event.data, '*')
+    /* Checked */
+    input[type=radio]:checked+label {
+        background-color: #5473d4;
+        color: #fff !important;
+    }
 
-    // }</script></head><body><div id="root"></div><script src="static/runtime~manager.9ffd8dd7b8642e4235e2.bundle.js"></script><script src="static/manager.17d4d661d068ad2b50d4.bundle.js"></script></body></html>
+    input[type=checkbox] {
+        margin: 0 !important;
+        height: 24px !important;
+        width: 24px !important;
+        margin-top: 4px !important;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    label input[type=checkbox] {
+        /* display: none; */
+    }
+
+    label input[type=checkbox]:after {
+        position: relative;
+        cursor: pointer;
+        z-index: 1000;
+        content: "\2713";
+        border-radius: 4px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #f7f8fa;
+        padding-left: 5px;
+        padding-bottom: 4px;
+        padding-top: 1px;
+        padding-right: 0px;
+        vertical-align: bottom;
+        color: transparent;
+    }
+
+    label input[type=checkbox]:checked:after {
+        background-color: #5473d4;
+        color: #fff;
+    }
+
+    .Pane.horizontal.Pane2 > div > div > div[role=tablist] {
+        padding-top: 0px !important;
+        padding-bottom: 8px !important;
+    }
+    .Pane.horizontal.Pane2 > div > div > div > div {
+        /* height: 100% !important; */
+    }
+
+    .Pane.horizontal.Pane2 > div > div > div button {
+        background: #f7f8fa !important;
+        border: 0 !important;
+        padding: 8px 16px !important;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .Pane.horizontal.Pane2 > div > div > div button:hover {
+        background: #ebedf1 !important;
+    }
+
+    pre {
+        margin: 0 !important;
+    }</style></head><body><div id="root"></div><script src="/sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.3aaa912fd37e258bb4b5.bundle.js"></script><script src="vendors~main.0033c47b6b329bbee8cc.bundle.js"></script><script src="main.5bfdfb147f12f83c0711.bundle.js"></script></body></html>
