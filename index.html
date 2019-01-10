@@ -12,78 +12,22 @@
   } catch (e) {
     console.warn('unable to connect to parent frame for connecting dev tools');
   }</script><style>* {
-        /* font-size: 14px !important; */
         color: rgb(66, 82, 110) !important;
     }
+
     input {
         padding: 12px 18px !important;
         font-size: 14px !important;
         height: auto !important;
-        /* border: 1px solid rgba(84, 115, 212, .3) !important; */
         border-radius: 100px !important;
         transition : border .3s ease-out;
         border: 0 !important;
         background:#eceef3 !important;
     }
+
     input:focus {
-        /* border: 1px solid rgba(84, 115, 212, .8) !important; */
         border-radius: 100px !important;
     }
-
-    /*
-    .Pane.vertical.Pane1>div:first-child>div:first-child>div:first-child>div:first-child {
-        display: none !important;
-    }
-
-    .Pane.vertical.Pane1 {
-        width: 250px !important;
-        max-width: 250px !important;
-        position: sticky;
-        top: 0;
-        bottom: 0;
-    }
-
-    .Pane.vertical.Pane1 * {
-        background: none !important;
-    }
-
-    .Pane.vertical.Pane1 input {
-        padding: 12px 16px !important;
-        height: auto !important;
-        border-radius: 4px !important;
-        background: #ffffff !important;
-        color: rgb(130, 130, 130) !important;
-    }
-
-    .Pane.horizontal.Pane2 > div > div {
-        border-radius: none !important;
-        border: 0 !important;
-        padding: 10px 20px !important;
-    }
-
-    .div[role=tablist] {
-        padding: 0 !important;
-    }
-
-    .Resizer.horizontal.disabled {
-        background: #ffffff !important;
-    }
-
-    .Resizer.vertical {
-        display: none !important;
-    }
-
-    #root>div>div {
-        background: #f4f5f7 !important;
-        background: #f7f8fa !important;
-    }
-
-    svg {
-        fill: #ffffff !important;
-        fill: #69757f !important;
-    }
-
-    */
 
     ul {
         margin-top: 0 !important;
@@ -92,24 +36,29 @@
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
+
     ul ul {
         margin-bottom: 8px !important;
         margin-top: 0 !important;
         margin-left: 0px !important;
     }
+
     ul ul ul {
         padding-left: 25px !important;
         margin-top: 15px !important;
         margin-bottom: 15px !important;
     }
+
     li li {
         margin-top: 4px !important;
         margin-bottom: 4px !important;
     }
+
     li li li {
         margin-top: 0px !important;
         margin-bottom: 5px !important;
     }
+
     ul ul a {
         padding: 1px 0px 1px 0px !important;
         margin-left: 0px !important;
@@ -118,13 +67,16 @@
         line-height: 22px !important;
         font-size: 14px !important;
     }
+
     svg {
         fill: #ffffff !important;
         fill: #69757f !important;
     }
+
     a:active {
         background: rgba(9, 30, 66, 0.04);
     }
+
     .Pane.vertical.Pane1 {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
@@ -132,33 +84,42 @@
         padding-right: 20px !important;
         width: 250px !important;
     }
+
     .Pane.vertical.Pane1 div div {
         padding: 0px !important;
     }
+
     .Pane.vertical.Pane1>div:first-child>div:first-child>div:first-child>div:first-child {
         display: none !important;
     }
+
     .Pane.horizontal.Pane1 {
         padding: 0 !important;
     }
+
     .Pane.horizontal.Pane1 div {
         padding: 0 !important;
     }
+
     .Resizer.vertical {
         display: none !important;
     }
+
     .Pane.vertical.Pane1 div[role='menuitem'] {
         padding: 5px 0px 5px 10px !important;
         /* background: rgba(9, 30, 66, 0.04) !important; */
         border-radius: 2px !important;
     }
+
     .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:first-child {
         display: none !important;
     }
+
     .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:nth-child(2) {
         font-size: 12px !important;
         text-transform: uppercase;
     }
+
     .Pane.vertical.Pane1 div div div > div:nth-child(3) {
         height: calc(100% - 175px);
         position: absolute;
@@ -166,11 +127,13 @@
         overflow: scroll;
         top: 65px;
     }
+
     .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) {
         position: absolute;
         width: 100%;
         bottom: 0px;
     }
+
     .Pane.vertical.Pane1 > div > div > div:before {
         display: block;
         background-image: url('./images/logo.svg');
@@ -182,9 +145,9 @@
         height: 43px;
         left: 8px;
         transform: scale(0.8);
-        /* transform: scale(0.9) translateX(-50%); */
         transform-origin: top left;
     }
+
     .Pane.horizontal.Pane2 > div > div > div {
         padding: 15px 20px !important;
         width: auto !important;
@@ -219,13 +182,6 @@
         margin-right: 12px;
     }
 
-    /* Hover */
-    /* input[type=radio]+label:hover {
-        border-color: #00AD51;
-        color: #00AD51;
-    } */
-
-    /* Checked */
     input[type=radio]:checked+label {
         background-color: #5473d4;
         color: #fff !important;
@@ -240,10 +196,6 @@
 
     label {
         cursor: pointer;
-    }
-
-    label input[type=checkbox] {
-        /* display: none; */
     }
 
     label input[type=checkbox]:after {
@@ -273,9 +225,6 @@
         padding-top: 0px !important;
         padding-bottom: 8px !important;
     }
-    .Pane.horizontal.Pane2 > div > div > div > div {
-        /* height: 100% !important; */
-    }
 
     .Pane.horizontal.Pane2 > div > div > div button {
         background: #f7f8fa !important;
@@ -291,4 +240,4 @@
 
     pre {
         margin: 0 !important;
-    }</style></head><body><div id="root"></div><script src="/sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.729a62daeea60911f9f0.bundle.js"></script><script src="vendors~main.b23d56286a41b6c7c566.bundle.js"></script><script src="main.1530d506cb463cc805d0.bundle.js"></script></body></html>
+    }</style></head><body><div id="root"></div><script src="/sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.729a62daeea60911f9f0.bundle.js"></script><script src="vendors~main.896ee8fcdde1db4a59d1.bundle.js"></script><script src="main.b3c05da55809fb6a109f.bundle.js"></script></body></html>
