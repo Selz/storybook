@@ -1,71 +1,148 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Storybook</title><style>html, body {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Storybook</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>html, body {
     overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-  }</style><script>try {
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
     if (window.parent !== window) {
       window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
       window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__VUE_DEVTOOLS_GLOBAL_HOOK__;
     }
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.warn('unable to connect to parent frame for connecting dev tools');
   }</script><style>* {
         color: rgb(66, 82, 110) !important;
+        box-shadow: none !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
     }
 
-    input {
-        padding: 12px 18px !important;
+    button {
+        border-right: 0 !important;
+        border-left: 0 !important;
+    }
+
+    a .sidebar-item:hover {
+        background: #f7f8fa !important;
+        border-radius: 4px !important;
+    }
+
+    .simplebar-content section {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+
+    .simplebar-content .sidebar-item {
+        padding-bottom: 6px !important;
+        padding-top: 6px !important;
+        margin-top: 0 !important;
+        margin-left: 0px !important;
+    }
+
+    .simplebar-content section div svg {
+        display: none;
+    }
+
+    .sidebar-container .simplebar-content form {
+        position: absolute !important;
+        border: none !important;
+        bottom: 0 !important;
+        border-bottom: 0 !important;
+        width: calc(100% - 40px) !important;
+    }
+
+    .simplebar-content form input {
+        padding: 10px 18px 8px 48px !important;
         font-size: 14px !important;
         height: auto !important;
         border-radius: 100px !important;
-        transition : border .3s ease-out;
+        transition: border 0.3s ease-out;
         border: 0 !important;
-        background:#eceef3 !important;
+        background: #f7f8fa !important;
     }
 
-    input:focus {
+    .simplebar-content form svg {
+        left: 20px !important;
+    }
+
+    .simplebar-content form input:focus {
         border-radius: 100px !important;
     }
 
-    ul {
-        margin-top: 0 !important;
-        margin-left: 0 !important;
-        padding-top: 0 !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
+    .sidebar-header {
+        margin-bottom: 20px !important;
     }
 
-    ul ul {
-        margin-bottom: 8px !important;
-        margin-top: 0 !important;
-        margin-left: 0px !important;
+    .sidebar-header button {
+        display: none !important;
     }
 
-    ul ul ul {
-        padding-left: 25px !important;
-        margin-top: 15px !important;
-        margin-bottom: 15px !important;
+    .sidebar-header img {
+        width: 56px !important;
+        margin-left: 18px !important;
+        margin-top: 10px !important;
     }
 
-    li li {
-        margin-top: 4px !important;
-        margin-bottom: 4px !important;
+    .sidebar-item.selected {
+        background: none !important;
     }
 
-    li li li {
-        margin-top: 0px !important;
-        margin-bottom: 5px !important;
+    .simplebar-wrapper {
+        background: #fff !important;
     }
 
-    ul ul a {
-        padding: 1px 0px 1px 0px !important;
-        margin-left: 0px !important;
-        background: 0 !important;
-        border-radius: 3px !important;
-        line-height: 22px !important;
-        font-size: 14px !important;
+    .simplebar-content form > label {
+        min-height: 44px !important;
+    }
+
+    .simplebar-content form label > div {
+        display: flex;
+    }
+
+    .simplebar-content form label > span {
+        min-width: 160px;
+    }
+
+    .react-draggable {
+        background: none !important;
+    }
+
+    #storybook-panel-root {
+        background: #fff !important;
+    }
+
+    #storybook-panel-root .simplebar-wrapper {
+        min-height: 48px;
+    }
+
+    #storybook-panel-root div[role='tablist'] {
+        margin-top: 10px;
+    }
+
+    #storybook-panel-root div[role='tablist'] button:hover {
+        background: #f7f8fa !important;
+    }
+
+    #storybook-panel-root .simplebar-wrapper .simplebar-content-wrapper .simplebar-content > div {
+        height: auto !important;
+    }
+
+    #storybook-panel-root > div:nth-child(2) {
+        height: calc(100% - 60px) !important;
+        top: 60px !important;
+    }
+
+    #storybook-panel-root > div:first-child > div {
+        height: 60px !important;
+    }
+
+    #root > div:last-child > div > div .simplebar-wrapper {
+        /* top: -5px; */
+        position: relative;
     }
 
     svg {
@@ -77,86 +154,6 @@
         background: rgba(9, 30, 66, 0.04);
     }
 
-    .Pane.vertical.Pane1 {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        width: 250px !important;
-    }
-
-    .Pane.vertical.Pane1 div div {
-        padding: 0px !important;
-    }
-
-    .Pane.vertical.Pane1>div:first-child>div:first-child>div:first-child>div:first-child {
-        display: none !important;
-    }
-
-    .Pane.horizontal.Pane1 {
-        padding: 0 !important;
-    }
-
-    .Pane.horizontal.Pane1 div {
-        padding: 0 !important;
-    }
-
-    .Resizer.vertical {
-        display: none !important;
-    }
-
-    .Pane.vertical.Pane1 div[role='menuitem'] {
-        padding: 5px 0px 5px 10px !important;
-        /* background: rgba(9, 30, 66, 0.04) !important; */
-        border-radius: 2px !important;
-    }
-
-    .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:first-child {
-        display: none !important;
-    }
-
-    .Pane.vertical.Pane1 div[role='menuitem'] div:first-child > div:nth-child(2) {
-        font-size: 12px !important;
-        text-transform: uppercase;
-    }
-
-    .Pane.vertical.Pane1 div div div > div:nth-child(3) {
-        height: calc(100% - 175px);
-        position: absolute;
-        width: 100%;
-        overflow: scroll;
-        top: 65px;
-    }
-
-    .Pane.vertical.Pane1 > div > div > div > div:nth-child(2) {
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-    }
-
-    .Pane.vertical.Pane1 > div > div > div:before {
-        display: block;
-        background-image: url('./images/logo.svg');
-        background-size: 77px 43px;
-        content: ' ';
-        position: absolute;
-        top: 10px;
-        width: 77px;
-        height: 43px;
-        left: 8px;
-        transform: scale(0.8);
-        transform-origin: top left;
-    }
-
-    .Pane.horizontal.Pane2 > div > div > div {
-        padding: 15px 20px !important;
-        width: auto !important;
-    }
-
-    .Pane.horizontal.Pane2 form label > span {
-        min-width: 150px !important;
-    }
-
     textarea {
         height: 40px !important;
         padding: 8px 16px !important;
@@ -165,29 +162,29 @@
         background: #f7f8fa !important;
     }
 
-    input[type=radio] {
+    input[type='radio'] {
         position: absolute;
         left: -10000px;
         display: block;
     }
 
-    input[type=radio]+label {
+    input[type='radio'] + label {
         cursor: pointer;
         display: inline-block;
         border-radius: 5px;
         text-align: center;
         font-size: 14px !important;
         background-color: #f7f8fa;
-        padding: 6px 10px 8px 10px !important;
+        padding: 4px 9px 5px 9px !important;
         margin-right: 12px;
     }
 
-    input[type=radio]:checked+label {
-        background-color: #5473d4;
+    input[type='radio']:checked + label {
+        background-color: #41526e;
         color: #fff !important;
     }
 
-    input[type=checkbox] {
+    input[type='checkbox'] {
         margin: 0 !important;
         height: 24px !important;
         width: 24px !important;
@@ -198,11 +195,11 @@
         cursor: pointer;
     }
 
-    label input[type=checkbox]:after {
+    label input[type='checkbox']:after {
         position: relative;
         cursor: pointer;
         z-index: 1000;
-        content: "\2713";
+        content: '\2713';
         border-radius: 4px;
         display: inline-block;
         width: 15px;
@@ -216,28 +213,14 @@
         color: transparent;
     }
 
-    label input[type=checkbox]:checked:after {
-        background-color: #5473d4;
+    label input[type='checkbox']:checked:after {
+        background-color: #41526e;
         color: #fff;
-    }
-
-    .Pane.horizontal.Pane2 > div > div > div[role=tablist] {
-        padding-top: 0px !important;
-        padding-bottom: 8px !important;
-    }
-
-    .Pane.horizontal.Pane2 > div > div > div button {
-        background: #f7f8fa !important;
-        border: 0 !important;
-        padding: 8px 16px !important;
-        cursor: pointer;
-        z-index: 10000;
-    }
-
-    .Pane.horizontal.Pane2 > div > div > div button:hover {
-        background: #ebedf1 !important;
     }
 
     pre {
         margin: 0 !important;
-    }</style></head><body><div id="root"></div><script src="./sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.bc5736b348b208430f61.bundle.js"></script><script src="vendors~main.8f7d191556f29c2e5418.bundle.js"></script><script src="main.00dc44454c6366e90526.bundle.js"></script></body></html>
+    }</style><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['DOCS_MODE'] = false;</script><script src="runtime~main.bc5736b348b208430f61.bundle.js"></script><script src="vendors~main.1d76b0d1def6861dc149.bundle.js"></script><script src="main.00dc44454c6366e90526.bundle.js"></script></body></html>
